@@ -1,1 +1,2 @@
-# m7-hw10-smith-carrie
+No outside resources were used
+I had no issues
