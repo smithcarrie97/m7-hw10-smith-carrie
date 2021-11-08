@@ -1,3 +1,13 @@
+// acquire references to page elements
+var nameSpan = document.querySelector('span')
+var formEl = document.querySelector('form')
+var clear = document.querySelector('#clear')
+var textarea = document.querySelector('textarea')
+
+// Retrieve name and note content from cookies and localstorage
+// Then apply them to elements on the page
+// YOUR CODE HERE
+textarea.value = window.localStorage.getItem('notes')
 nameSpan.innerText = document.cookie
 
 formEl.onsubmit = function(e) {
@@ -28,6 +38,3 @@ clear.onclick = function() {
 function endThumbsUp() {
   this.classList.remove('emoji')
 }
-
-formEl.elements.save.onanimationend = endThumbsUp
-clear.onanimationend = endThumbsUp
